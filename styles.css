@@ -1,3 +1,81 @@
 body {
-    margin: 0;
+    margin: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* box1 rules */
+
+.boxOne {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+ 
+.box {
+    background-color: #444;
+    color: #FFFFFF;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+/*End*/
+
+/* boxTwo rules -- Line-based-placement*/
+
+
+.boxTwo {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
+.box2 {
+    background-color: aqua;
+    color: #333;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.A {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.B {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.C {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.D {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.E {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.F {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
