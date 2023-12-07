@@ -239,3 +239,39 @@ body {
     grid-column: col2-start; /*  / col3-start */
     grid-row: row2-start;
 }
+
+/* The repeat keyword */
+.boxEight {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, [col] 100px);  /* 4 columns */
+    grid-template-rows: repeat(3, [row] auto);  /* 3 rows*/
+}
+
+.box8 {
+    background-color: darkseagreen;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.A8 {
+    grid-column: col / span 2;
+    grid-row: row;  /**/
+}
+.B8 {
+    grid-column: col 3 / span 2; /* From col 3 and 2 columns */
+    grid-row: row;  /* Not needed */
+}
+.C8 {
+    grid-column: col;
+    grid-row: row 2;
+}
+.D8 {
+    grid-column: col 2 / span 3;  /* From col 2 and 3 columns */
+    grid-row: row 2;  /* Not needed */
+}
+.E8 {
+    grid-column: col 1 / span 4;  /* From col 1 and 4 columns */
+    grid-row: row 3;  /* Not needed */
+}
