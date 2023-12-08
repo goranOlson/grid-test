@@ -275,3 +275,30 @@ body {
     grid-column: col 1 / span 4;  /* From col 1 and 4 columns */
     grid-row: row 3;  /* Not needed */
 }
+
+/* Defining grid areas by naming */
+.boxNine {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 80px 160px;
+    grid-template-areas: "....... header ......."
+                         "sidebar content content";
+}
+
+.box9 {
+    background-color: goldenrod;
+    padding: 20px;
+    color: whitesmoke;
+    border-radius: 7px;
+}
+
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.content {
+    grid-area: content;
+}
