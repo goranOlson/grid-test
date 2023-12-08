@@ -293,12 +293,27 @@ body {
     border-radius: 7px;
 }
 
-.header {
-    grid-area: header;
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+
+/* Another grid area by naming */
+.boxTen {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-areas: "..... header2 header2"
+                         "sidebar2 content2 content2"
+                         "sidebar2 content2 content2"
+                         "footer2 footer2 footer2";
+
 }
-.sidebar {
-    grid-area: sidebar;
+.box10 {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 7px;
 }
-.content {
-    grid-area: content;
-}
+.header2 { grid-area: header2; background-color: aquamarine; }
+.sidebar2 { grid-area: sidebar2; }
+.content2 { grid-area: content2; }
+.footer2 { grid-area: footer2; background-color: aquamarine; }
