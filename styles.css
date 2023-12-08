@@ -301,7 +301,14 @@ body {
 .boxTen {
     display: grid;
     gap: 10px;
-    grid-template-columns: 220px 220px 220px;
+    
+    /* We use absolute value on columns */
+    grid-template-columns: 320px 320px 320px;
+    /* We use relative value on columns. fr = fraction */
+    grid-template-columns: 120px 1fr 1fr;
+    /* ... or with repeat ...*/
+    /* grid-template-columns: repeat(3, 1fr); */
+
     grid-template-areas: "..... header2 header2"
                          "sidebar2 content2 content2"
                          "sidebar2 content2 content2"
